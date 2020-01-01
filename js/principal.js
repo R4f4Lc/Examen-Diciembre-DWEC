@@ -3,13 +3,13 @@ RAFAEL LOPEZ CRUZ
 */
 {
 
-    let ventana = new Array();
+    let ventana;
 
     //Crea una ventana nueva
     let crearVentana = function(contenido){
-        ventana.push(window.open("","","width=650,height=600"));
-        ventana[ventana.length-1].document.write(contenido);
-        ventana[ventana.length-1].document.close();
+        ventana = window.open("","","width=650,height=600");
+        ventana.document.write(contenido);
+        ventana.document.close();
     }
 
     let init = function(){
