@@ -39,17 +39,17 @@ RAFAEL LOPEZ CRUZ
         //Si se pulsa crear un nuevo empleado comprueba si los valores son válidos y crea al empleado
         botonCrearEmpleado.addEventListener("click",function(){
             if(!checkNombre(inputNombre.value))
-                spanErrorNombre.innerHTML = expresionNombre[1];
+                spanErrorNombre.innerHTML = expresiones.expresionNombre[1];
             else
                 spanErrorNombre.innerHTML = "";
             
             if(!checkDni(inputDni.value))
-                spanErrorDni.innerHTML = expresionDni[1];
+                spanErrorDni.innerHTML = expresiones.expresionDni[1];
             else
                 spanErrorDni.innerHTML  = "";
                 
             if(!checkFechaNacimiento(inputFechaNacimiento.value))
-                spanErrorFechaNacimiento.innerHTML = expresionFechaNacimiento[1];
+                spanErrorFechaNacimiento.innerHTML = expresiones.expresionFechaNacimiento[1];
             else
                 spanErrorFechaNacimiento.innerHTML  = "";
 
