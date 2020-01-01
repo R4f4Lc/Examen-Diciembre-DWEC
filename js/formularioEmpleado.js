@@ -17,21 +17,21 @@ RAFAEL LOPEZ CRUZ
 
         inputNombre.addEventListener("blur",function(){
             if(!checkNombre(inputNombre.value))
-                spanErrorNombre.innerHTML = expresionNombre[1];
+                spanErrorNombre.innerHTML = expresiones.expresionNombre[1];
             else
                 spanErrorNombre.innerHTML = "";
         })
 
         inputFechaNacimiento.addEventListener("blur",function(){
             if(!checkFechaNacimiento(inputFechaNacimiento.value))
-                spanErrorFechaNacimiento.innerHTML = expresionFechaNacimiento[1];
+                spanErrorFechaNacimiento.innerHTML = expresiones.expresionFechaNacimiento[1];
             else
                 spanErrorFechaNacimiento.innerHTML  = "";
         })
 
         inputDni.addEventListener("blur",function(){
             if(!checkDni(inputDni.value))
-                spanErrorDni.innerHTML = expresionDni[1];
+                spanErrorDni.innerHTML = expresiones.expresionDni[1];
             else
                 spanErrorDni.innerHTML  = "";
         })
