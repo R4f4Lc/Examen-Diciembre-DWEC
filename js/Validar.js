@@ -10,19 +10,19 @@ let expresionDni = new Array(new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9
 //Comprueba si el nombre es correcto
 let checkNombre = function(nombre){
     if(expresionNombre[0].test(nombre.trim()))
-        return true
-    return false
+        return true;
+    return false;
 }
 //Comprueba si la fecha es correcta
 let checkFechaNacimiento = function(fechaNacimiento){
     if(expresionFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento) != "Invalid Date")
-        return true
-    return false
+        return true;
+    return false;
 }
 //Comprueba si el DNI es correcto
 let checkDni = function(dni){
     let numeroDni = parseInt(dni[0]+dni[1]+dni[2]+dni[3]+dni[4]+dni[5]+dni[6]+dni[7]);
     if(expresionDni[0].test(dni.trim()) && expresionDni[2][numeroDni%23] == dni[dni.length-1].toUpperCase())
-        return true
-    return false
+        return true;
+    return false;
 }
