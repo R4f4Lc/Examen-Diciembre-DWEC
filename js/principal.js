@@ -52,6 +52,7 @@ RAFAEL LOPEZ CRUZ
             <title>Formulario empleado</title>
             <script src="js/Empleado.js"></script>
             <script src="js/Validar.js"></script>
+            <script src="js/formularioEmpleado.js"></script>
         </head>
         <body>
             <h1>Rafael López Cruz</h1>
