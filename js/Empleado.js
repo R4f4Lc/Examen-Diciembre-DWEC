@@ -18,7 +18,7 @@ RAFAEL LOPEZ CRUZ
             <meta name="author" content="Rafael Lopez Cruz">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>De todo un poco</title>
+            <title>Información de un Empleado</title>
         </head>
         <body>
             <h1>Rafael López Cruz</h1>
