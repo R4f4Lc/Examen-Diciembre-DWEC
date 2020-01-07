@@ -19,7 +19,6 @@ RAFAEL LOPEZ CRUZ
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <meta http-equiv="X-UA-Compatible" content="ie=edge">
             <title>De todo un poco</title>
-            <script src="js/detodounpoco.js"></script>
         </head>
         <body>
             <h1>Rafael López Cruz</h1>
