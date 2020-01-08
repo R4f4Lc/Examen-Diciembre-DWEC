@@ -3,11 +3,9 @@ RAFAEL LOPEZ CRUZ
 */
 {
 
-    let ventana;
-
     //Crea una ventana nueva
     let crearVentana = function(contenido){
-        ventana = window.open("","","width=650,height=600");
+        let ventana = window.open("","","width=650,height=600");
         ventana.document.write(contenido);
         ventana.document.close();
     }
