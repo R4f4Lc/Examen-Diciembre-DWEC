@@ -17,7 +17,7 @@ let checkNombre = function(nombre){
 }
 //Comprueba si la fecha es correcta
 let checkFechaNacimiento = function(fechaNacimiento){
-    if(expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento) != "Invalid Date")
+    if(expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento[3]+fechaNacimiento[4]+"/"+fechaNacimiento[0]+fechaNacimiento[1]+"/"+fechaNacimiento[6]+fechaNacimiento[7]+fechaNacimiento[8]+fechaNacimiento[9]) != "Invalid Date")
         return true;
     return false;
 }
