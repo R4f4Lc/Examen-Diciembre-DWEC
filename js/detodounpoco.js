@@ -2,7 +2,7 @@
 RAFAEL LOPEZ CRUZ
 */
 {
-    const DIASEMANA = new Array("Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo");
+    const DIASEMANA = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
 
     //Devuelve el dia de la semana
     let getDiaActual = function(){
