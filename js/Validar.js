@@ -13,9 +13,14 @@ let expresiones = {
 let checkNombre = function(nombre){
     return (expresiones.expresionNombre[0].test(nombre.trim()));
 }
-//Comprueba si la fecha es correcta
+
+/**
+ * Comprueba que la fecha con la expresión regular es correcta 
+ * y parto los datos para formar el new Date()
+ */
 let checkFechaNacimiento = function(fechaNacimiento){
-    return (expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) && new Date(fechaNacimiento[3]+fechaNacimiento[4]+"/"+fechaNacimiento[0]+fechaNacimiento[1]+"/"+fechaNacimiento[6]+fechaNacimiento[7]+fechaNacimiento[8]+fechaNacimiento[9]) != "Invalid Date")
+    return (expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) && 
+    new Date(fechaNacimiento[3]+fechaNacimiento[4]+"/"+fechaNacimiento[0]+fechaNacimiento[1]+"/"+fechaNacimiento[6]+fechaNacimiento[7]+fechaNacimiento[8]+fechaNacimiento[9]) != "Invalid Date")
 }
 //Comprueba si el DNI es correcto
 let checkDni = function(dni){
