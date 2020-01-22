@@ -15,13 +15,18 @@ let checkNombre = function(nombre){
 }
 
 /**
- * Comprueba que la fecha con la expresión regular es correcta 
- * y parto los datos para formar el new Date()
+ * Comprueba la fecha con la expresión regular 
+ * y que la fecha es válida.
  */
 let checkFechaNacimiento = function(fechaNacimiento){
-    return (expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) && 
-    new Date(fechaNacimiento[3]+fechaNacimiento[4]+"/"+fechaNacimiento[0]+fechaNacimiento[1]+"/"+fechaNacimiento[6]+fechaNacimiento[7]+fechaNacimiento[8]+fechaNacimiento[9]) != "Invalid Date")
+    let fecha = new Date(fechaNacimiento[3]+fechaNacimiento[4]+"/"+fechaNacimiento[0]+fechaNacimiento[1]+"/"+fechaNacimiento[6]+fechaNacimiento[7]+fechaNacimiento[8]+fechaNacimiento[9]);
+    return (
+        expresiones.expresionFechaNacimiento[0].test(fechaNacimiento) &&
+        fecha != "Invalid Date" &&
+        (fechaNacimiento[0]+fechaNacimiento[1]) == fecha.getDate()
+        );
 }
+
 //Comprueba si el DNI es correcto
 let checkDni = function(dni){
     let numeroDni = parseInt(dni[0]+dni[1]+dni[2]+dni[3]+dni[4]+dni[5]+dni[6]+dni[7]);
