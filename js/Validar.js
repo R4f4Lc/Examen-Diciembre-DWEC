@@ -4,9 +4,9 @@ RAFAEL LOPEZ CRUZ
 
 //Expresiones regulares
 let expresiones = {
-    expresionNombre:[new RegExp("^[a-zA-Zá-úÁ-Ú ]+$"),"Error. ¡No es un nombre válido!"],
-    expresionFechaNacimiento: [new RegExp("^[0-9]{2}/{1}|-{1}[0-9]{2}/{1}|-{1}[0-9]{4}$"),"Error. ¡No es una fecha de nacimiento válida!"],
-    expresionDni:[new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9]{8}[A-Za-z]{1}$)"),"Error. ¡No es un DNI válido!","TRWAGMYFPDXBNJZSQVHLCKET"]
+    expresionNombre:[new RegExp("^[a-zA-Zá-úÁ-Ú ]+$"),"Escribe un nombre. Por ejemplo: Pepe Garcia"],
+    expresionFechaNacimiento: [new RegExp("^[0-9]{2}/{1}|-{1}[0-9]{2}/{1}|-{1}[0-9]{4}$"),"Introduce una fecha correcta. Por ejemplo 12/12/2012,12-12-2012"],
+    expresionDni:[new RegExp("(^[0-9]{8}-{1}| {1}[A-Za-z]{1}$)|(^[0-9]{8}[A-Za-z]{1}$)"),"Introduce un DNI válido. Por ejemplo 12345678Z","TRWAGMYFPDXBNJZSQVHLCKET"]
 }
 
 //Comprueba si el nombre es correcto
