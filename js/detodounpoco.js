@@ -2,16 +2,21 @@
 RAFAEL LOPEZ CRUZ
 */
 {
-    const DIASEMANA = ["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+    const DIASEMANA = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+
+
+    let fechaActual = function(){
+        return new Date();
+    }
 
     //Devuelve el dia de la semana
-    let getDiaActual = function(){
-        return DIASEMANA[new Date().getDay()-1];
+    let getDiaActual = function(indice){
+        return DIASEMANA[indice];
         }
     
     //Devuelve la hora actual con su mensaje
     let getHoraActual = function(){
-        let fecha = new Date();
+        let fecha = fechaActual();
         let hora = fecha.getHours();
         let minutos = fecha.getMinutes();
         if(hora<8)
@@ -29,7 +34,7 @@ RAFAEL LOPEZ CRUZ
         let salir = document.getElementById("salir");
 
         informa.addEventListener("click",function(){
-            info.innerHTML = "<p>" + getDiaActual() + "</p><p>" + getHoraActual() + "</p>"; 
+            info.innerHTML = "<p>" + getDiaActual(fechaActual().getDay()) + "</p><p>" + getHoraActual() + "</p>"; 
         });
 
         salir.addEventListener("click",function(){
