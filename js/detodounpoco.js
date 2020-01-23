@@ -22,7 +22,7 @@ RAFAEL LOPEZ CRUZ
         if(hora<8)
             return "Son las " + hora + ":" + minutos+".Ya es hora de que comiences a trabajar. Hay que levantar el país.";
         
-        else if(hora>18)
+        if(hora>18)
             return "Son las " + hora + ":" + minutos+".Ya es hora de que dejes de trabajar. Hay que conciliar la vida laboral con la familiar";
         
         return "Son las " + hora + ":" + minutos+".Pronto llegan las vacaciones. Aguanta";
